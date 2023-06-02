@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 입력하는 곳(회원가입, 로그인, 게시글)</title>
+</head>
+<body>
+    <!-- action -> 어느 페이지로 데이터들을 전달할 것인가? -->
+    <!-- method -> 어떻게 전달할 것인가? get or post -->
+    <form action="/detail" method="post">
+        <!-- a태그처럼 페이지로 이동하는데, 데이터까지 갖고 이동함 -->
+        <label for="test">입력 테스트</label>
+        <input type ="text" id="test" name="test">
+
+        <select name="sel">
+            <option>서울시</option>
+            <option>경기도</option>
+            <option>강원도</option>
+            <option>제주도</option>
+        </select>
+        
+        <textarea name="intro"></textarea>
+
+        <button type="submit">입력완료</button>
+    </form>
+</body>
+</html>

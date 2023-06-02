@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get or post</title>
+</head>
+<body>
+    <form action="/userinfo" method="get">
+        <p>get</p>
+        <input type="text" id="author" name="author">
+        <textarea name="context"></textarea>
+        <button type="submit">게시하기</button>
+    </form>
+    <form action="/boardDetail" method="post">
+        <p>post</p>
+        <input type="text" id="userName" name="userName">
+        <input type="password" id="userPass" name="userPass">
+        <select name="gender">
+            <option>남성</option>
+            <option>여성</option>
+            <option>그 외 / 응답하지 않음</option>
+        </select>
+        <button type="submit">가입하기</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동물 리스트</title>
+    <style>
+        .list { border: 1px solid #000; margin: 30px; }
+    </style>
+</head>
+<body>
+    <!-- 목록들만 보여주는 페이지, 이들 중 하나를 클릭하면 해당 상세 페이지 화면으로 이동함 -->
+    <% Animals.forEach((animal, idx) => { %>
+        <div class="list">
+            <h2>나이 : <%- animal.age %></h2>
+            <p><%- animal.sort %></p>
+            <a href="/animal_detail/<%- idx %>">더 알아보기</a>
+        </div>
+    <% }) %>
+</body>
+</html>
